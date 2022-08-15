@@ -1,0 +1,71 @@
+.App {
+  font-family: 'Aller', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.App-logo {
+  height: 3.5rem;
+}
+
+.App-header {
+  height: 6rem;
+  align-items: center;
+}
+
+.main-header-group {
+  height: 4.5rem;
+  padding: 1rem 6rem;
+  align-items: center;
+  display: flex;
+}
+
+.navigation-list {
+  display: flex;
+}
+
+.navigation-item {
+  list-style: none;
+  margin-right: 2rem;
+  font-weight: bolder;
+  font-size: 1.3rem;
+  color: #008839;
+}
+
+.navigation-item:hover {
+  color: #62C422;
+}
+
+.content {
+  background-color: #008839;
+  background-image: linear-gradient(to bottom right, #008839, #62C422);
+  height: 30rem;
+  position: relative;
+}
+
+.info-box {
+  background-color: #F1F0F2;
+  text-align: center;
+  height: 11rem;
+  width: 20rem;
+  border-radius: 2px;
+  box-shadow: 5px 7px #000;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+button {
+  background-color: #008839;
+  color: #F1F0F2;
+  border: 0;
+  padding: 0.5rem;
+  border-radius: 2px;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color:#62C422;
+  color: #000;
+}
