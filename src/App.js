@@ -1,5 +1,6 @@
 import logo from './YBS-Logo.svg';
 import React, { Component } from 'react';
+import Popup from './components/Popup';
 import './App.css';
 
 class App extends Component {
@@ -34,9 +35,14 @@ class App extends Component {
                         <h3>Mortgage Calculator</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris pretium metus nisl, vitae
                             venenatis massa consequat ac.</p>
-                        <button>Mortgage Calculator</button>
+                        <button onClick={this.togglePopup.bind(this)}>Mortgage Calculator</button>
                     </div>
                 </div>
+                {this.state.showPopup &&
+                    <Popup
+                        closePopup={this.togglePopup.bind(this)}
+                    />
+                }
             </div>
         );
     }

@@ -1,0 +1,45 @@
+.overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 700;
+    overflow: auto;
+    transform: translateZ(0);
+}
+
+.popup {
+    width: 500px;
+    height: 500px;
+    left: 50%;
+    top: 50%;
+    margin: auto;
+    padding: 0.5rem;
+    border-radius: 3px;
+    background: white;
+}
+
+.popup-top {
+    align-items: center;
+    display: flex;
+}
+
+.popup-close-button {
+    background-color: white;
+    color: #000;
+    border: 0;
+    padding: 0.5rem;
+    border-radius: 2px;
+    font-size: 1rem;
+    position: relative;
+    left: 30%;
+    font-size: 2em;
+}
+
+.popup-close-button:hover {
+    background-color: white;
+    color: #000;
+}
